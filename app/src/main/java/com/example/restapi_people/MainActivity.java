@@ -54,7 +54,13 @@ public class MainActivity extends AppCompatActivity {
         showFormButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                    formLinearLayout.setVisibility(View.VISIBLE);
+            }
+        });
+        cancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                formLinearLayout.setVisibility(View.GONE);
             }
         });
     }
